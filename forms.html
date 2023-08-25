@@ -4,30 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form{
+            line-height: 28px;
+        }
+    </style>
 </head>
 <body>
+    <h1>Travel reservation form</h1>
     <form action="#">
-        <label for="Username">Full name*:</label>
+        <h3>*denotes mandotory</h3>
+        <label for="Username">
+            <strong>Full name*:</strong>
+        </label>
         <br>
         <input type="text"  name="Username"placeholder="First Name Last Name" required>
         <br>
         <label for="Usermail">
-            Email Address:
+        <strong>
+            Email Address*:
+        </strong>   
         </label>
         <br>
         <input type="email" name="Usermail" id="" placeholder="EMAIL_ADDRESS "required >
         <br>
         <label for="Dates">
-            Arrival Date
+            <strong>
+                Arrival Date*:
+            </strong>
         </label>
         <br>
         <input type="date" name="Dates" id="" required>
         <br>
-        <label for="persons">Number Of Persons</label>
+        <label for="persons">
+            <strong>
+                Number Of Persons*:
+            </strong>
+            </label>
         <br>
         <input type="number" name="persons" id="" required>
         <br>
-        <label for="">Select your Package</label>
+        <label for="">
+            <strong>Select Tour Package*:</strong> </label>
         <br>
         <select name="" id="">
             <option value="">Select</option>
@@ -35,7 +53,11 @@
         <option value="goa" selected>Goa</option>
         </select>
         <br>
-        <label>What would you want to Avail?</label>
+        <label>
+            <strong>
+                What would you want to Avail?*
+            </strong>
+            </label>
         <br>
         <label for="">
             boarding
@@ -54,18 +76,30 @@
         <br>
 <label for="">Discount Coupon Code</label>
 <br>
-<input type="number" name="" id="">
+<input type="number" name="agree" id="">
 <br>
-<label for="">Terms and Conditions</label>
-<br>
-<input type="radio">
-<label for="">I agree</label>
-<input type="radio" name="" id="">
-<br>
-<label for="">I disagree</label>
+<label for="">
+    <strong>
+        Terms and Conditions*
+    </strong>
+    </label>
 <br>
 
-<button type="submit"> </button>
+<label for="agree">
+    <input type="radio" name="agree">
+    I agree
+</label>
+<span>&nbsp; &nbsp;</span>
+
+
+<label >
+    <input type="radio" name="agree" id="">
+    I disagree
+</label>
+
+<br>
+
+<button type="submit">Complete reservation</button>
     </form>
 </body>
 </html>
